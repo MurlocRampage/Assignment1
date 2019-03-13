@@ -46,6 +46,14 @@ router.get('/entries.html', function(req,res){
     res.sendfile(path.join(__dirname+'/entries.html'));
 });
 
+router.get('/topic1', function(req, res) {
+    res.sendFile(path.join(__dirname + '/views/topic1.html'));
+});
+
+router.get('/topic2', function(req,res) {
+    res.sendFile(path.join(__dirname + '/views/topic2.html'));
+});
+
 //Post from form on index.html
 app.post('/', function(req,res){
    console.log(req.body);
